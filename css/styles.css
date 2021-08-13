@@ -12,10 +12,6 @@
     user-select: none;
 }
 
-.logo img {
-    margin: 20px 68px;
-}
-
 .nav-item {
     padding: 5px 8px;
 }
@@ -40,55 +36,53 @@
 /* seccion */
 .cuartos {
     width: 100%;
-    height: 240px;
+    height: 380px;
     margin-top: 20px;
     background-color: royalblue;
     border: 1px solid;
 }
 
+.cuartos h2 {
+    font-size: 40px;
+    font-family: comic sans MS;
+}
+
 .fotos {
-    height: 150px;
+    height: 260px;
     background-color: saddlebrown;
     border: 1px solid;
     float: left;
 }
 
-/* .cuartos {
-    height: 245px;
-    padding: 8px;
+.fotos img {
+    margin: 11px 18px;
+    width: 90%;
+    height: 230px;
 }
 
-.uno {
-    width: 265px;
-    height: 200px;
-    margin: 0 5px;
-    float: left;
+.fotos img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
-.uno img {
-    width: 100%;
-    height: 100%;
+.btn {
+    margin: 8px;
 }
-
-.text {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-.hotel {
-    background-color: blue;
-}
-
-.hotel img {
-    width: 450px;
-    height: 400px;
-    margin: 20px 18px;
-} */
 
 @media (max-width: 992px) {
-    .logo img {
-        width: 900px;
-        margin: 20px 17px;
+
+    .cuartos {
+        height: 350px;
+        margin-top: 10px;
+    }
+    
+    .fotos {
+        height: 230px;
+    }
+    
+    .fotos img {
+        margin: 11px 15px;
+        height: 200px;
     }
 }
 
@@ -97,22 +91,60 @@
         font-size: 3.5rem;
     }
 
-    .logo img {
-        width: 700px;
-        margin: 20px 0;
+    .cuartos {
+        height: 310px;
+        margin-top: 10px;
+    }
+    
+    .fotos {
+        height: 185px;
+    }
+    
+    .fotos img {
+        margin: 11px;
+        height: 160px;
     }
 }
 
 @media (max-width: 576px) {
-    .logo img {
-        width: 500px;
-        margin: 20px 10px;
+    .cuartos {
+        height: 775px;
+        margin-top: 10px;
+    }
+    
+    .cuartos h2 {
+        font-size: 25px;
+    }
+
+    .fotos {
+        height: 220px;
+    }
+    
+    .fotos img {
+        width: 70%;
+        margin: 11px 75px;
+        height: 190px;
     }
 }
 
 @media (max-width: 360px) {
-    .logo img {
-        width: 300px;
-        margin: 20px 10px;
+    .cuartos {
+        height: 790px;
+        margin-top: 10px;
+    }
+    
+    .cuartos h2 {
+        font-size: 25px;
+    }
+
+    .fotos {
+        width: 100%;
+        height: 220px;
+    }
+    
+    .fotos img {
+        width: 90%;
+        margin: 11px 15px;
+        height: 180px;
     }
 }

@@ -16,12 +16,6 @@
     <title>Marina del Bay</title>
 </head>
 <body>
-    <div class="container logos">
-        <a href="../pages/index.html" class="logo">
-            <img src="../images/logo.png" alt="logo">
-        </a>
-    </div>
-
     <nav class="navbar navbar-expand-lg navbar-dark" style="background: #FFAE79">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,18 +48,22 @@
         </div>
     </nav>
 
-    <header>
+    <!-- <header>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="../images/carrusel3.jpg" class="d-block w-100 img" alt="...">
+                    <img src="../images/logo.png" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="../images/carrusel1.jpg" class="d-block w-100 img" alt="...">
+                    <img src="../images/carrusel1.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/carrusel3.jpg" class="d-block w-100">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -77,103 +75,225 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-    </header>
+    </header> -->
     
     <div class="container">
         <section>
             <div class="col-xs-12 cuartos">
-                <h2 class="text-center">Habitación Doble</h2>
-                <div class="col-xs-12 col-md-4 fotos">
-
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-            </div>
-
-            <div class="col-xs-12 cuartos">
-                <h2 class="text-center">Habitación Doble</h2>
-                <div class="col-xs-12 col-md-4 fotos">
-
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-            </div>
-
-            <div class="col-xs-12 cuartos">
-                <h2 class="text-center">Habitación Doble</h2>
-                <div class="col-xs-12 col-md-4 fotos">
-
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-            </div>
-
-            <div class="col-xs-12 cuartos">
-                <h2 class="text-center">Habitación Doble</h2>
-                <div class="col-xs-12 col-md-4 fotos">
-
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-
-                <div class="col-xs-12 col-md-4 fotos">
-                    
-                </div>
-            </div>
-            <!-- <div class="cuartos">
-                <div class="uno">
-                    <img src="../images/triple.jpg">
-                    <div class="text">
-                        <h4>Habitación Triple</h4>
-                    </div>
-                </div>
-                <div class="uno">
-                    <img src="../images/matri.jpg">
-                    <div class="text">
-                        <h4>Habitación Matrimonial</h4>
-                    </div>
-                </div>
-                <div class="uno">
-                    <img src="../images/simple.jpg">
-                    <div class="text">
-                        <h4>Habitación Simple</h4>
-                    </div>
-                </div>
-                <div class="uno">
+                <h2 class="text-center">Habitación Doble con vista al mar</h2>
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
                     <img src="../images/doble.jpg">
-                    <div class="text">
-                        <h4>Habitación Doble</h4>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/doble1.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/doble2.jpg">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tarifas de la Habitación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bienvenidos a Marina del Bay</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tarifas de la Habitación doble con vista al mar
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="hotel">
-                <img src="../images/img.jpg">
-                <span>
-                    Marina del Bay
-                </span>
-            </div> -->
-            
+            <div class="col-xs-12 cuartos">
+                <h2 class="text-center">Habitación Doble</h2>
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/d1.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/d2.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/d3.jpg">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tarifas de la Habitación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bienvenidos a Marina del Bay</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tarifas de la Habitación doble
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 cuartos">
+                <h2 class="text-center">Habitación Matrimonial con vista al mar</h2>
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/matri.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/matri1.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/matri2.jpg">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tarifas de la Habitación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bienvenidos a Marina del Bay</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tarifas de la Habitación Matrimonial con vista al mar
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 cuartos">
+                <h2 class="text-center">Habitación Matrimonial</h2>
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/cuarto1.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/cuarto2.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/cuarto3.jpg">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tarifas de la Habitación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bienvenidos a Marina del Bay</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tarifas de la Habitación Matrimonial
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 cuartos">
+                <h2 class="text-center">Habitación Simple</h2>
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/simple.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/simple1.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/simple2.jpg">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tarifas de la Habitación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bienvenidos a Marina del Bay</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tarifas de la Habitación Simple
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 cuartos">
+                <h2 class="text-center">Habitación Triple</h2>
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/triple.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/triple1.jpg">
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-4 fotos">
+                    <img src="../images/triple2.jpg">
+                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Tarifas de la Habitación
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Bienvenidos a Marina del Bay</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Tarifas de la Habitación Triple
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 </body>
