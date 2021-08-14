@@ -13,9 +13,9 @@
     user-select: none;
 }
 
-.logo img {
-    width: 72px;
-    height: 72px;
+.etiqueta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
 .nav-item {
@@ -23,17 +23,12 @@
 }
 
 .nav-link {
-    font-size: 25px;
+    font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.select {
-    background-color: #FF6752;
-    border-radius: 10px;
-}
-
 .form {
-    width: 800px;
+    width: 65%;
     background: #24303c;
     padding: 30px;
     margin: auto;
@@ -52,6 +47,7 @@
   
 .controls {
     width: 100%;
+    max-height: 220px;
     background: #24303c;
     padding: 10px;
     border-radius: 4px;
@@ -88,4 +84,53 @@
     margin: 16px 0;
     font-size: 16px;
     cursor: pointer;
+}
+
+footer {
+    height: 95px;
+    background-color: #00129E;
+}
+
+footer p {
+    margin: 27px 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    display: block;
+}
+
+footer span {
+    margin: 22px 20px;
+    float: right;
+    display: block;
+}
+
+footer span a {
+    text-decoration: none;
+}
+
+footer span i {
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .form {
+        width: 90%;
+    }
+
+    footer {
+        height: 140px;
+    }
+    
+    footer span {
+        margin: 10px 20px;
+        float: left;
+        display: block;
+    }
 }

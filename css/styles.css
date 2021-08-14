@@ -27,24 +27,46 @@
 }
 
 /* cabecera */
-
 .carousel-inner {
     width: 100%;
-    height: 500px;
+    height: 550px;
+}
+
+.carousel-item img {
+    height: 550px;
 }
 
 /* seccion */
+section {
+    margin-bottom: 20px;
+}
 .cuartos {
     width: 100%;
     height: 380px;
     margin-top: 20px;
-    /* background-color: royalblue; */
-    border: 1px solid;
+    box-shadow: 7px 7px 7px #ccc;
 }
 
 .cuartos h2 {
     font-size: 40px;
     font-family: comic sans MS;
+}
+
+.servicios {
+    width: 100%;
+    height: 380px;
+    padding: 5px 15px;
+    margin-top: 20px;
+    box-shadow: 7px 7px 7px #ccc;
+} 
+
+.servicios h2 {
+    font-size: 35px;
+    font-family: comic sans MS;
+}
+
+.servicios span {
+    float: right;
 }
 
 .fotos {
@@ -60,18 +82,64 @@
 
 .fotos img:hover {
     cursor: pointer;
-    transform: scale(1.1);
+}
+
+.costo {
+    height: 260px;
+    float: left;
+}
+
+.costo img {
+    margin: 11px 18px;
+    width: 90%;
+    height: 230px;
+}
+
+.costo img:hover {
+    cursor: pointer;
 }
 
 .btn {
     margin: 5px 12px;
 }
 
-@media (max-width: 992px) {
+.btn a {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
 
+footer {
+    height: 95px;
+    background-color: #00129E;
+}
+
+footer p {
+    margin: 27px 20px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    display: block;
+}
+
+footer span {
+    margin: 22px 20px;
+    float: right;
+    display: block;
+}
+
+footer span a {
+    text-decoration: none;
+}
+
+footer span i {
+    margin-right: 10px;
+}
+
+@media (max-width: 992px) {
     .cuartos {
         height: 350px;
-        margin-top: 10px;
+        margin-top: 30px;
     }
     
     .fotos {
@@ -82,6 +150,19 @@
         margin: 11px 15px;
         height: 200px;
     }
+
+    .costo {
+        height: 230px;
+    }
+
+    .costo img {
+        margin: 11px 15px;
+        height: 200px;
+    }
+
+    .btn {
+        margin: 5px 12px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -89,9 +170,22 @@
         font-size: 3.5rem;
     }
 
+    .carousel-inner {
+        width: 100%;
+        height: 380px;
+    }
+    
+    .carousel-item img {
+        height: 380px;
+    }
+
     .cuartos {
-        height: 310px;
-        margin-top: 10px;
+        height: 300px;
+        margin-top: 30px;
+    }
+
+    .cuartos h2 {
+        font-size: 33px;
     }
     
     .fotos {
@@ -102,12 +196,34 @@
         margin: 11px;
         height: 160px;
     }
+
+    .costo {
+        height: 185px;
+    }
+
+    .costo img {
+        margin: 11px;
+        height: 150px;
+    }
+
+    .btn {
+        margin: 5px 12px;
+    }
 }
 
 @media (max-width: 576px) {
+    .carousel-inner {
+        width: 100%;
+        height: 350px;
+    }
+    
+    .carousel-item img {
+        height: 350px;
+    }
+
     .cuartos {
-        height: 775px;
-        margin-top: 10px;
+        height: 530px;
+        margin-top: 30px;
     }
     
     .cuartos h2 {
@@ -121,14 +237,42 @@
     .fotos img {
         width: 70%;
         margin: 11px 75px;
-        height: 190px;
+        height: 200px;
     }
+
+    .costo {
+        height: 220px;
+    }
+
+    .costo img {
+        width: 70%;
+        margin: 11px 75px;
+        height: 170px;
+    }
+
+    .btn {
+        margin: -10px 75px;
+    }
+
+    .servicios {
+        height: 500px;
+        padding: 5px 10px;
+    } 
 }
 
 @media (max-width: 360px) {
+    .carousel-inner {
+        width: 100%;
+        height: 250px;
+    }
+    
+    .carousel-item img {
+        height: 250px;
+    }
+    
     .cuartos {
-        height: 790px;
-        margin-top: 10px;
+        height: 555px;
+        margin-top: 30px;
     }
     
     .cuartos h2 {
@@ -144,5 +288,40 @@
         width: 90%;
         margin: 11px 15px;
         height: 180px;
+    }
+
+    .costo {
+        width: 100%;
+        height: 220px;
+    }
+
+    .costo img {
+        width: 90%;
+        margin: 11px 15px;
+        height: 150px;
+    }
+
+    .btn {
+        margin: -10px 12px;
+    }
+
+    .servicios {
+        width: 100%;
+        height: 580px;
+        padding: 5px 10px;
+    } 
+    
+    .servicios span {
+        visibility: hidden;
+    }
+
+    footer {
+        height: 145px;
+    }
+    
+    footer span {
+        margin: 10px 20px;
+        float: left;
+        display: block;
     }
 }
