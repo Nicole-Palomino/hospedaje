@@ -113,9 +113,82 @@ footer span i {
     margin-right: 10px;
 }
 
+/* para php */
+.contacto {
+    background: linear-gradient(70deg, #00129E, #1f53c5);
+}
+
+.text {
+    width: 80%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: tomato;
+}
+
+.text h3 {
+    color: #fff;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.text p {
+    color: #fff;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.consulta {
+    text-align: center;
+}
+
+.text button {
+    margin: 10px 375px;
+    padding: 10px;
+    background-color: #00ffff;
+    border-radius: 10px;
+    border: 2px solid #00ffff;
+}
+
+.text button a {
+    color: #000;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    .text {
+        width: 90%;
+    }
+    
+    .text button {
+        margin: 10px 285px;
+    }
+}
+
 @media (max-width: 768px) {
     .bd-placeholder-img-lg {
         font-size: 3.5rem;
+    }
+
+    .text {
+        width: 90%;
+    }
+    
+    .text button {
+        margin: 10px 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text {
+        width: 90%;
+    }
+    
+    .text button {
+        margin: 10px 90px;
     }
 }
 
@@ -132,5 +205,13 @@ footer span i {
         margin: 10px 20px;
         float: left;
         display: block;
+    }
+
+    .text {
+        width: 90%;
+    }
+    
+    .text button {
+        margin: 10px 10px;
     }
 }
