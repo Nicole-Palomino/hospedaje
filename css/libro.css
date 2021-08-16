@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* MENU DE NAVEGACION */
@@ -27,63 +26,63 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.form {
+section h2 {
+    margin: 30px 0;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section h3 {
+    margin: 20px 0;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+section p {
+    margin: 20px 0;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+form {
     width: 65%;
     background: #24303c;
     padding: 30px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     border-radius: 4px;
     font-family: 'calibri';
-    color: white;
+    color: #ffffff;
     box-shadow: 7px 13px 37px #000;
 }
-  
-.form h4 {
-    font-size: 22px;
-    margin-bottom: 20px;
-    text-align: center;
+
+form label {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-  
-.controls {
+
+form input {
     width: 100%;
+    padding: 3px;
+}
+
+form textarea {
+    height: 150px;
     max-height: 220px;
-    background: #24303c;
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #1f53c5;
-    font-family: 'calibri';
-    font-size: 18px;
-    color: white;
 }
-  
-.form p {
-    height: 40px;
-    text-align: center;
-    font-size: 17px;
-    line-height: 40px;
-}
-  
-.form a {
-    color: white;
-    text-decoration: none;
-}
-  
-.form a:hover {
-    color: white;
-    text-decoration: underline;
-}
-  
-.form .botons {
-    width: 100%;
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
-    cursor: pointer;
+
+form button {
+    padding: 5px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    background-color: #00ffff;
+    border: 2px solid #00ffff;
+    border-radius: 10px;
 }
 
 footer {
@@ -118,12 +117,8 @@ footer span i {
 }
 
 @media (max-width: 992px) {
-    .text {
-        width: 90%;
-    }
-    
-    .text button {
-        margin: 10px 285px;
+    form {
+        width: 80%;
     }
 }
 
@@ -132,12 +127,8 @@ footer span i {
         font-size: 3.5rem;
     }
 
-    .text {
-        width: 90%;
-    }
-    
-    .text button {
-        margin: 10px 180px;
+    form {
+        width: 85%;
     }
 
     footer {
@@ -153,12 +144,12 @@ footer span i {
 }
 
 @media (max-width: 576px) {
-    .text {
-        width: 90%;
+    form {
+        width: 88%;
     }
-    
-    .text button {
-        margin: 10px 90px;
+
+    section p {
+        font-size: 20px;
     }
 
     footer {
@@ -177,8 +168,8 @@ footer span i {
 }
 
 @media (max-width: 360px) {
-    .form {
-        width: 90%;
+    form {
+        width: 97%;
     }
 
     footer {
@@ -193,13 +184,5 @@ footer span i {
 
     footer p {
         font-size: 18px;
-    }
-
-    .text {
-        width: 90%;
-    }
-    
-    .text button {
-        margin: 10px 10px;
     }
 }
