@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/logo.ico" type="image/x-icon">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/navbars/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/libro.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>   
+    <script src="../css/main.js"></script>
+    <title>Libro de reclamaciones</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background: #00129E">
+        <div class="container">
+            <a class="navbar-brand etiqueta" href="#">
+                MARINA DEL BAY
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" style="color: #00CDFF;" href="../pages/index.html">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-bold" href="https://marinadelbay.herokuapp.com/pages/index.html">
+                            Hotel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-bold" href="../pages/contacto.html">
+                            Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light fw-bold" href="#">
+                            <i class="bi bi-calendar-date-fill"></i> Reservar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section>
+            <div class="container">
+                <h2>Libro de Reclamación</h2>
+            </div>
+
+            <div class="container">
+                <h3 class="text-center">Hoja de Reclamación</h3>
+            </div>
+
+            <div class="container">
+                <p>Identificación del consumidor reclamante</p>
+            </div>
+
+            <form action="">
+                <label for="nombre">Nombres: <span style="color: #ff0000;">*</span></label> <br>
+                <input type="text" name="nombres" id="nombre" required> <br><br>
+
+                <label for="apellido">Apellidos: <span style="color: #ff0000;">*</span></label> <br>
+                <input type="text" name="apellidos" id="apellido" required> <br><br>
+
+                <label for="documento">Tipo de documento: <span style="color: #ff0000;">*</span></label> <br>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected>---</option>
+                    <option value="DNI">DNI</option>
+                    <option value="Pasaporte">Pasaporte</option>
+                    <option value="RUC">RUC</option>
+                </select> <br><br>
+
+                <label for="dni">N° Documento: <span style="color: #ff0000;">*</span></label> <br>
+                <input type="number" name="dni" id="dni" required><br><br>
+
+                <label for="correo">Correo: <span style="color: #ff0000;">*</span></label> <br>
+                <input type="text" name="correo" id="correo" required><br><br>
+
+                <label for="celular">Celular: <span style="color: #ff0000;">*</span></label> <br>
+                <input type="number" name="celular" id="celular" required><br><br>
+            </form>
+
+            <div class="container">
+                <p>Detalle del reclamo o queja</p>
+            </div>
+
+            <form action="">
+                <label for="reclamo">Tipo de reclamo: <span style="color: #ff0000;">*</span></label> <br>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected>---</option>
+                    <option value="Queja">Queja</option>
+                    <option value="Reclamo">Reclamo</option>
+                </select> <br><br>
+
+                <label for="consumo">Tipo de consumo: <span style="color: #ff0000;">*</span></label> <br>
+                <select class="form-select" aria-label="Default select example" required>
+                    <option selected>---</option>
+                    <option value="Producto">Producto</option>
+                    <option value="Servicio">Servicio</option>
+                </select> <br><br>
+
+                <label for="reclamo">Fecha de Reclamo: <span style="color: #ff0000;">*</span></label> <br>
+                <input type="date" name="fecha" id="fecha" required><br><br>
+
+                <label for="descripcion">Descripción del reclamo o queja: <span style="color: #ff0000;">*</span></label> <br>
+                <textarea class="form-control" id="floatingTextarea2"></textarea> <br><br>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Acepta términos y condiciones <span style="color: #ff0000;">*</span>
+                    </label>
+                </div> <br>
+
+                <button type="submit" value="submit">Enviar hoja de reclamo</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p class="text-light">
+                © 2021, Marina del Bay - <i class="bi bi-book-fill"></i> 
+                <a href="../pages/libro.html" class="text-light">Libro de reclamaciones</a>
+            </p>
+            <span>
+                <a href="https://www.facebook.com/marinadelbay" target="_blank">
+                    <i class="bi bi-facebook fs-2" style="color: #fff;"></i>
+                </a>
+                <a href="https://www.instagram.com/marina.del.bay/" target="_blank">
+                    <i class="bi bi-instagram fs-2" style="color: #fff;"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-whatsapp fs-2" style="color: #fff;"></i>
+                </a>
+            </span>
+        </div>
+    </footer>
+</body>
+</html>
